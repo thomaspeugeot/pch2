@@ -58,3 +58,8 @@ I executed the Go program 7 times for each value of ncpu={1,2,3,4}. The median e
 	ncpu=2		 74243ms	x1.94
 	ncpu=3		 51128ms	x2.81
 	ncpu=4		 41145ms	x3.50
+
+Notes
+-----
+This implementation is far from the state of the art; much faster libraries are available ([Qhull](http://www.qhull.org) and [CGAL](http://www.cgal.org)).
+I am interested in relative performance of a Go program on different number of CPUs. In this case, a satisfactory speedup factor x3.56 was achieved on a 4-core CPU.
