@@ -43,14 +43,14 @@ I executed the Go program 7 times for each value of ncpu={1,2,3,4}. The median e
 
 1,000,000 random points on the unit square (N=1000000,L=16,U=22):
 
-	ncpu=1		140220ms		x1
-	ncpu=2		 72083ms		x1.95
-	ncpu=3		 49555ms		x2.83
-	ncpu=4		 39853ms		x3.52
+	ncpu=1		140220ms	x1
+	ncpu=2		 72083ms	x1.95
+	ncpu=3		 49555ms	x2.83
+	ncpu=4		 39853ms	x3.52
 
 1,000,000 random points on the unit disc (N=1000000,L=167,U=173):
 
-	ncpu=1		143886ms		x1
-	ncpu=2		 74243ms		x1.94
-	ncpu=3		 51128ms		x2.81
-	ncpu=4		 41145ms		x3.50
+	ncpu=1		143886ms	x1
+	ncpu=2		 74243ms	x1.94
+	ncpu=3		 51128ms	x2.81
+	ncpu=4		 41145ms	x3.50
