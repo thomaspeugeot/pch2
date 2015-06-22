@@ -1,6 +1,10 @@
 PCH2: Parallel convex hull (in 2 dimensions)
 ============================================
 
+Algorithm
+---------
+See [doc](https://godoc.org/github.com/reconditematter/pq#ParConvHull2q) for more info.
+
 Hardware/Software
 -----------------
 * CPU: Intel Xeon E5-1620 (3.6GHz, 4 cores, hyper-threading disabled)
