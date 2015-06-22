@@ -11,16 +11,16 @@ Hardware/Software
 Results
 -------
 I executed the Go program 7 times for each value of ncpu={1,2,3,4}. The median execution times and the speedup factors are summarized below.
-(n=<number of points>,l=<lower hull size>,u=<upper hull size>).
+(N=number_of_points,L=lower_hull_size,U=upper_hull_size).
 
-10,000 random points on the unit square (n=10000,l=13,u=11):
+10,000 random points on the unit square (N=10000,L=13,U=11):
 
 	ncpu=1		1278ms		x1
 	ncpu=2		 660ms		x1.94
 	ncpu=3		 458ms		x2.79
 	ncpu=4		 372ms		x3.44
 
-10,000 random points on the unit disc(n=10000,l=33,u=35):
+10,000 random points on the unit disc (N=10000,L=33,U=35):
 
 	ncpu=1		1309ms		x1
 	ncpu=2		 722ms		x1.81
