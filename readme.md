@@ -63,3 +63,50 @@ Notes
 -----
 This implementation is far from the state of the art; much faster libraries are available ([Qhull](http://www.qhull.org) and [CGAL](http://www.cgal.org)).
 I am interested in relative performance of a Go program on different number of CPUs. In this case, a satisfactory speedup factor x3.56 was achieved on a 4-core CPU.
+
+Addendum
+--------
+The Go Team released Go 1.5 on 19 August 2015. I installed the new version and repeated the benchmark. The median execution times and the speedup factors
+are summarized below.
+
+10,000 random points on the unit square (N=10000,L=13,U=11):
+
+	ncpu=1		1116ms		x1
+	ncpu=2		 672ms		x1.66
+	ncpu=3		 492ms		x2.27
+	ncpu=4		 465ms		x2.40
+
+10,000 random points on the unit disc (N=10000,L=33,U=35):
+
+	ncpu=1		1147ms		x1
+	ncpu=2		 680ms		x1.69
+	ncpu=3		 507ms		x2.26
+	ncpu=4		 477ms		x2.40
+
+100,000 random points on the unit square (N=100000,L=13,U=17):
+
+	ncpu=1		11173ms		x1
+	ncpu=2		 6146ms		x1.82
+	ncpu=3		 4463ms		x2.50
+	ncpu=4		 3786ms		x2.95
+
+100,000 random points on the unit disc (N=100000,L=77,U=78):
+
+	ncpu=1		11574ms		x1
+	ncpu=2		 6328ms		x1.83
+	ncpu=3		 4588ms		x2.52
+	cnpu=4		 3911ms		x2.96
+
+1,000,000 random points on the unit square (N=1000000,L=16,U=22):
+
+	ncpu=1		119670ms	x1
+	ncpu=2		 65186ms	x1.84
+	ncpu=3		 47155ms	x2.54
+	ncpu=4		 39666ms	x3.02
+
+1,000,000 random points on the unit disc (N=1000000,L=167,U=173):
+
+	ncpu=1		122756ms	x1
+	ncpu=2		 67114ms	x1.83
+	ncpu=3		 48572ms	x2.53
+	ncpu=4		 40732ms	x3.01
