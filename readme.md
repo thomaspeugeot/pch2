@@ -43,7 +43,7 @@ I executed the Go program 7 times for each value of ncpu={1,2,3,4}. The median e
 	ncpu=1		13782ms		x1
 	ncpu=2		 7055ms		x1.95
 	ncpu=3		 4831ms		x2.85
-	cnpu=4		 3872ms		x3.56
+	ncpu=4		 3872ms		x3.56
 
 1,000,000 random points on the unit square (N=1000000,L=16,U=22):
 
@@ -95,7 +95,7 @@ are summarized below.
 	ncpu=1		11574ms		x1
 	ncpu=2		 6328ms		x1.83
 	ncpu=3		 4588ms		x2.52
-	cnpu=4		 3911ms		x2.96
+	ncpu=4		 3911ms		x2.96
 
 1,000,000 random points on the unit square (N=1000000,L=16,U=22):
 
